@@ -1,0 +1,23 @@
+<!-- Encryption Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-gray-900 text-white p-6">
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6">Encryption</h1>
+        <input type="file" id="uploadImage" class="block w-full p-2 mb-4 border rounded text-white" />
+        <textarea id="message" placeholder="Enter your secret message" class="w-full p-2 border rounded mb-4 text-black"></textarea>
+        <input type="text" id="keyword" placeholder="Enter Keyword" class="block w-full p-2 border rounded mb-4 text-black" />
+        <input type="email" id="recipientEmail" placeholder="Recipient Email" class="block w-full p-2 border rounded mb-4 text-black" />
+        <input type="email" id="senderEmail" placeholder="Your Email" class="block w-full p-2 border rounded mb-4 text-black" />
+        <button class="bg-yellow-500 px-4 py-2 rounded mb-4" onclick="generateTrackingURL()">Generate URL & Send Email</button>
+        <input type="datetime-local" id="timestamp" class="block w-full p-2 border rounded mb-4 text-black" />
+        <button class="bg-blue-600 px-4 py-2 rounded" onclick="encryptImage()">Encrypt Image</button>
+    </div>
+</body>
+</html>
